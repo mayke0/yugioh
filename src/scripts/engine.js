@@ -27,9 +27,11 @@ const state = {
 };
 let audio = new Audio("./src/assets/audios/egyptian_duel.mp3");
 
+
 const volumeSlider = document.querySelector(".volume-slider input");
 const handleVolume = (e) => {
   audio.volume = e.target.value;
+  
 };
 volumeSlider.addEventListener("input", handleVolume);
 
